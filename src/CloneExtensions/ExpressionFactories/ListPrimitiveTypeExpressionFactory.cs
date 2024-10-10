@@ -2,8 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-
-namespace CloneExtensions.ExpressionFactories
+namespace UnlockedData.CloneExtensions.ExpressionFactories
 {
     class ListPrimitiveTypeExpressionFactory<T> : DeepShallowExpressionFactoryBase<T>
     {

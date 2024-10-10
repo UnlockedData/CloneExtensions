@@ -1,10 +1,9 @@
-﻿using CloneExtensions.ExpressionFactories;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-
-namespace CloneExtensions
+using UnlockedData.CloneExtensions.ExpressionFactories;
+namespace UnlockedData.CloneExtensions
 {
     class ExpressionFactory<T>
     {

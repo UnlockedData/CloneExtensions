@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
-namespace CloneExtensions
+using CloneExtensions;
+namespace UnlockedData.CloneExtensions
 {
     internal static class CloneManager<T>
     {

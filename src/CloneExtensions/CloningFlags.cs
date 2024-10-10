@@ -1,6 +1,5 @@
 ﻿using System;
-
-namespace CloneExtensions
+namespace UnlockedData.CloneExtensions
 {
     [Flags]
     public enum CloningFlags

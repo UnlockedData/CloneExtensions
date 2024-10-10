@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-
-namespace CloneExtensions
+namespace UnlockedData.CloneExtensions
 {
     static class TypeExtensions
     {
@@ -16,32 +15,6 @@ namespace CloneExtensions
             return type.IsPrimitiveOrKnownImmutable() || typeof(Delegate).IsAssignableFrom(type);
         }
 
-#if NET40 || NET45 || NET461
-        public static bool IsAbstract(this Type type)
-        {
-            return type.IsAbstract;
-        }
-        
-        public static bool IsPrimitive(this Type type)
-        {
-            return type.IsPrimitive;
-        }
-
-        public static bool IsGenericType(this Type type)
-        {
-            return type.IsGenericType;
-        }
-
-        public static bool IsValueType(this Type type)
-        {
-            return type.IsValueType;
-        }
-
-        public static bool IsInterface(this Type type)
-        {
-            return type.IsInterface;
-        }
-#else
 
         public static ConstructorInfo[] GetConstructors(this Type type)
         {
@@ -94,6 +67,6 @@ namespace CloneExtensions
         {
             return type.GetTypeInfo().IsInterface;
         }
-#endif
+
     }
 }

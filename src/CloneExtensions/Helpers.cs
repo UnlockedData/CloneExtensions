@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-
-namespace CloneExtensions
+namespace UnlockedData.CloneExtensions
 {
-    static internal class Helpers
+    static class Helpers
     {
         public static Expression GetCloningFlagsExpression(CloningFlags flags, ParameterExpression parameter)
         {

@@ -1,6 +1,5 @@
 ﻿using System.Linq.Expressions;
-
-namespace CloneExtensions.ExpressionFactories
+namespace UnlockedData.CloneExtensions.ExpressionFactories
 {
     interface IExpressionFactory<T>
     {

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
-
-namespace CloneExtensions.ExpressionFactories
+namespace UnlockedData.CloneExtensions.ExpressionFactories
 {
     class ArrayPrimitiveTypeExpressionFactory<T> : ArrayExpressionFactory<T>
     {

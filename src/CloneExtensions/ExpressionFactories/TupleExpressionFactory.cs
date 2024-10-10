@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.Linq.Expressions;
-
-namespace CloneExtensions.ExpressionFactories
+namespace UnlockedData.CloneExtensions.ExpressionFactories
 {
     class TupleExpressionFactory<T> : DeepShallowExpressionFactoryBase<T>
     {

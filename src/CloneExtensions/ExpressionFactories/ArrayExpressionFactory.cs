@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-
-namespace CloneExtensions.ExpressionFactories
+namespace UnlockedData.CloneExtensions.ExpressionFactories
 {
     class ArrayExpressionFactory<T> : DeepShallowExpressionFactoryBase<T>
     {
         private Type _itemType;
         private Expression _arrayLength;
         protected Expression _newArray;
+        
+        
 
         public ArrayExpressionFactory(ParameterExpression source, Expression target, ParameterExpression flags, ParameterExpression initializers, ParameterExpression clonedObjects)
             : base(source, target, flags, initializers, clonedObjects)
         {
+            
             _itemType = GetItemType();
             _arrayLength = Expression.Property(Source, "Length");
             _newArray = Expression.NewArrayBounds(_itemType, _arrayLength);

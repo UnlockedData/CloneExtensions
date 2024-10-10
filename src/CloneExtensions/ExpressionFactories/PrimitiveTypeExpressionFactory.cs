@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
-
-namespace CloneExtensions.ExpressionFactories
+namespace UnlockedData.CloneExtensions.ExpressionFactories
 {
     class PrimitiveTypeExpressionFactory<T> : ExpressionFactoryBase<T>
     {

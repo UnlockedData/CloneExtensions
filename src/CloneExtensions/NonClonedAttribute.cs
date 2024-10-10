@@ -1,6 +1,5 @@
 ﻿using System;
-
-namespace CloneExtensions
+namespace UnlockedData.CloneExtensions
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class NonClonedAttribute : Attribute

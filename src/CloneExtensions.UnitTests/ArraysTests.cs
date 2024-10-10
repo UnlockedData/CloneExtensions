@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CloneExtensions.UnitTests.Helpers;
+using UnlockedData.CloneExtensions;
 
 namespace CloneExtensions.UnitTests
 {

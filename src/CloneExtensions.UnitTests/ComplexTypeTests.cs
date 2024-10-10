@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CloneExtensions.UnitTests.Base;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using UnlockedData.CloneExtensions;
 
 namespace CloneExtensions.UnitTests
 {

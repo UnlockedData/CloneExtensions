@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CloneExtensions
+namespace UnlockedData.CloneExtensions
 {
     public static class CloneFactory
     {
@@ -12,29 +12,19 @@ namespace CloneExtensions
             typeof(string), typeof(DateTime), typeof(TimeSpan)
         };
 
-        private static IDictionary<Type, Func<object, object>> _customInitializers = new Dictionary<Type, Func<object, object>>();
-
         public static CloningFlags DefaultFlags
         {
-            get { return _defaultFlags; }
+            get => _defaultFlags;
         }
 
         public static IEnumerable<Type> KnownImmutableTypes
         {
-            get { return _knownImmutableTypes; }
+            get => _knownImmutableTypes;
         }
 
-        public static IDictionary<Type, Func<object, object>> CustomInitializers
-        {
-            get { return _customInitializers; }
-        }
+        public static IDictionary<Type, Func<object, object>> CustomInitializers { get; } = new Dictionary<Type, Func<object, object>>();
 
-        public static T GetClone<T>(this T source)
-        {
-            return GetClone(source, _defaultFlags);
-        }
-
-        public static T GetClone<T>(this T source, CloningFlags flags)
+        public static T GetClone<T>(this T source, CloningFlags flags = _defaultFlags)
         {
             return GetClone(source, flags, CustomInitializers);
         }

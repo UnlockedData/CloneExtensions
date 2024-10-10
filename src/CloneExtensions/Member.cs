@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Reflection;
-
-namespace CloneExtensions
+namespace UnlockedData.CloneExtensions
 {
     class Member
     {
