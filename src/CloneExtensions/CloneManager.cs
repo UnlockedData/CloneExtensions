@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using CloneExtensions;
 namespace UnlockedData.CloneExtensions
 {
-    internal static class CloneManager<T>
+    static class CloneManager<T>
     {
         private static Func<T, CloningFlags, IDictionary<Type, Func<object, object>>, Dictionary<object, object>, T> _clone;
 
